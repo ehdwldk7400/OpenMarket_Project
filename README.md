@@ -9,9 +9,10 @@
 ## 적용 기술
 - Python
 - Django Web Framework
-- Google SMTP
 - Bcrypt
 - JWT
+- Django-crontab
+- Django-MPTT
 - MySQL
 - AWS EC2, RDS
 - Gunicorn
@@ -23,23 +24,29 @@
 - EC2 인스턴스에 RDS 서버에 설치된 mysql 연동
 
 ### 계정
-- 로그인 / 회원가입
-- 이메일 / 패스워드 입력 값 검증
-- 이메일 인증 (Google SMTP)
+- 판매자 로그인/회원가입
+- 구매자 로그인/회원가입
+- 이메일 입력 값 검증
 - 패스워드 해쉬 및 토큰 발행
-- 고객 자산 조회
 
 ### 상품
-- 매수/매도 기능
-- 주문 내역 조회
-- 거래 완료 내역 조회
-- 24h Volume, 고가, 저가, 현재 가격 조회
-- 코인 리스트 조회
-- 차트 작성을 위한 과거 데이터 조회
+- 상품 등록
+    - 가격 옵션 및 상품 옵션 입력 
+- 상품 조회
+    - 현재 반영된 가격으로 상품 정보 출력
+- 상품 수정
+
+### 장바구니
+- 장바구니 담기
+- 장바구니 조회
+
+### 주문
+- 주문 등록
+- 주문 조화
+
 
 ## API Document
-[API 문서 보기](https://documenter.getpostman.com/view/10398819/SzS8s59w?version=latest)
+[API 문서 보기](https://documenter.getpostman.com/view/10398819/Szf3ZVWN?version=latest#3604e723-d0a9-43b4-85b8-5637deb21109)
 
 ## ERD
-![데이터모델링](https://k.kakaocdn.net/dn/zBxIC/btqDf02CwaQ/rCG8klfkzKwOo6C0ZHKJKk/img.png)
-
+![데이터모델링](https://raw.githubusercontent.com/Wave1994-Hoon/OpenMarket_Project/master/Database%20ERD.png)
